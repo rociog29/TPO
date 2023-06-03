@@ -1,0 +1,422 @@
+/*HOME - Página 1*/
+
+.conteiner
+{
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap:1%;
+  margin-right: 1%;
+  margin-left: 1%;
+  grid-template-areas: 
+  "header  header  header"
+  "main    main      main"
+  "section1    section1      section1"
+  "section2    section3      section4"
+  "footer  footer  footer";
+}
+
+
+.conteiner .header
+{
+  grid-area: header;
+  height: 10vh;
+  background-color: #2E3840;
+  text-align: right;
+  font-size: 1.7vw;
+  color: #F9DBBB;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0%;
+}
+
+a
+{
+  color: #F9DBBB;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.conteiner .main
+{
+  grid-area: main;
+  height:55vh;
+  background-image: url('../img/chinesefontdesign.com_2017-03-20_17-52-49.jpg');
+  color:  #2E3840;
+  font-family:"Wix Madefor Display" ;
+  text-align: center;
+  
+}
+
+.conteiner .section1
+{
+  grid-area: section1;
+  height: auto;
+  background-color: #F9DBBB;
+  color: #2E3840;
+  font-family:"Wix Madefor Display" ;
+  font-size: 2vw;  
+  text-align: center;
+  padding: 1%; 
+}
+
+.conteiner .section2
+{
+  grid-area: section2;
+  height: auto;
+  color: #2E3840;
+  font-family:"Wix Madefor Display" ;
+  font-size: 2vw;  
+  text-align: justify;
+  padding: 2%;
+
+}
+
+
+.conteiner .section3
+{
+  grid-area: section3;
+  height: auto;
+  color: #2E3840;
+  font-family:"Wix Madefor Display" ;
+  font-size: 2vw;  
+  text-align: justify;
+  padding:2%;
+
+
+}
+.conteiner .section4
+{
+  grid-area: section4;
+  height: auto;
+  
+  color: #2E3840;
+  font-family:"Wix Madefor Display" ;
+  font-size: 2vw;  
+  text-align: justify;
+  padding: 2%;
+  justify-content: center;
+}
+
+
+.conteiner .footer
+{
+  grid-area: footer;
+  background-color: #FF0303;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+
+@font-face 
+{
+  font-family:"Wix Madefor Display" ;
+  src: url('../fonts/Wix_Madefor_Display/WixMadeforDisplay-VariableFont_wght.ttf');
+}
+
+
+
+.titulo
+{
+  font-family: "Sansita";
+  font-size: 7vw;
+}
+
+@font-face {
+  font-family: Sansita;
+  src: url('../fonts/Sansita/Sansita-ExtraBold.ttf')
+}
+
+
+.h1, h2
+{
+  color: #4E6E81;
+  font-size: 2vw;
+  text-align: center; 
+  font-family:"Wix Madefor Display" 
+}
+
+h3
+{
+  background-color: #2E3840;
+  color: #F9DBBB;
+  font-size: 2vw;
+  text-align: center; 
+
+}
+
+.neko
+{
+  width: 25%;
+  height: 50%;
+  position: relative;
+  animation-name: nekolor;
+  animation-duration: 3s;
+  animation-delay:  1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nekolor 
+{
+from {background-color:#2E3840;}
+to {background-color:   #FF0303;}
+}
+
+
+.fotos
+{
+  width: 90%;
+  height: 40%;
+  padding:3%;
+  justify-content: center;
+}
+
+.fotos2
+{
+  width: 40%;
+  height: 40%;
+  padding:3%;
+  justify-content: center;
+
+}
+
+.redes
+{ 
+  width: 3%;
+  height: 29%;
+  padding: 0.2%;
+}
+
+
+.derechos
+{
+  background-color: #2E3840;
+  color: #F9DBBB;
+}
+
+
+.p
+{
+  font-family:"Wix Madefor Display";
+  color: #2E3840;
+}
+
+
+/*NOSOTROS - Página 2*/
+
+.conteiner2
+{
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap:1%;
+  margin-right: 1%;
+  margin-left: 1%;
+  grid-template-areas: 
+  "header2  header2  header2 header2"
+  "sidebar1 sidebar1  sidebar2  sidebar2"
+  "sidebar1 sidebar1  sidebar2  sidebar2"
+  "footer2  footer2  footer2 footer2";
+}
+
+.conteiner2 .header2
+{
+  grid-area: header2;
+  height: 10vh;
+  background-color: #2E3840;
+  text-align: right;
+  font-size: 1.7vw;
+  color: #F9DBBB;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0%;
+}
+
+.conteiner2 .sidebar1
+{
+  grid-area: sidebar1;
+  height: auto;
+  background-color: #F9DBBB;
+ 
+  text-align: center;
+  padding: 1%;
+}
+
+.conteiner2 .sidebar2
+{
+  grid-area: sidebar2;
+  height: auto;
+  background-image: url('../img/chinesefontdesign.com_2017-03-20_17-52-49.jpg');
+  background-color: #F9DBBB;
+  color: #2E3840;
+  font-family:"Wix Madefor Display" ;
+  font-size: 2vw;  
+  text-align: center;
+  padding: 1%;
+} 
+
+.conteiner2 .footer2
+{
+  grid-area: footer2;
+  background-color: #FF0303;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+/*PROMOCIONES - Página 3*/
+
+.conteiner3
+{
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap:1%;
+  margin-right: 1%;
+  margin-left: 1%;
+  grid-template-areas: 
+  "header3  header3  header3"
+  "sectiona  sectiona  sectiona"
+  "sectionb  sectionb   sectionb"
+  "sectionc   sectionc  sectionc"
+  "footer3  footer3    footer3";
+}
+
+.conteiner3 .header3
+{
+  grid-area: header3;
+  height: 10vh;
+  background-color: #2E3840;
+  text-align: right;
+  font-size: 1.7vw;
+  color: #F9DBBB;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0%;
+}
+
+.conteiner3 .sectiona
+{
+  grid-area: sectiona;
+  height: auto;
+  background-color: #F9DBBB;
+  color: #2E3840;
+  font-family:"Wix Madefor Display" ;
+  font-size: 2vw;  
+  text-align: justify;
+  padding: 1%; 
+}
+
+
+.conteiner3 .sectionb
+{
+  grid-area: sectionb;
+  height: auto;
+  background-color: #F9DBBB;
+  color: #2E3840;
+  font-family:"Wix Madefor Display" ;
+  font-size: 2vw;  
+  text-align: justify;
+  padding: 1%; 
+}
+
+
+.conteiner3 .sectionc
+{
+  grid-area: sectionc;
+  height: auto;
+  background-color: #F9DBBB;
+  color: #2E3840;
+  font-family:"Wix Madefor Display" ;
+  font-size: 2vw;  
+  text-align: justify;
+  padding: 1%; 
+}
+
+
+.conteiner3 .footer3
+{
+  grid-area: footer3;
+  background-color: #FF0303;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+
+/*CONTACTO - Página 4*/
+
+.conteiner4
+{
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap:1%;
+  margin-right: 1%;
+  margin-left: 1%;
+  grid-template-areas: 
+  "header4  header4  header4"
+  "main4 main4 main4"
+  "form form form"
+  "footer4  footer4  footer4";
+}
+
+
+.conteiner4 .header4
+{
+  grid-area: header4;
+  height: 10vh;
+  background-color: #2E3840;
+  text-align: right;
+  font-size: 1.7vw;
+  color: #F9DBBB;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0%;
+}
+
+
+.conteiner4 .main4
+{
+  grid-area: main4;
+  height:29vh;
+  font-size: 2vw;
+  font-family:"Wix Madefor Display";
+}
+
+
+.conteiner4 .form
+{
+  grid-area: form;
+  height: 66vh;
+  width:auto;
+  font-size: 1vw;
+  font-family: sans-serif;
+  color:#4E6E81;
+  padding: 1%;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  transition: 2s ease all;
+}
+
+.conteiner4 .footer4
+{
+  grid-area: footer4;
+  background-color: #FF0303;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+
+
+
+
+  
+
+
+
+
+
